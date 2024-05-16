@@ -18,7 +18,6 @@ public partial class Registrar : ContentPage
 			parametros.Add("nombre", txtNombre.Text);
             parametros.Add("apellido", txtApellido.Text);
             parametros.Add("edad", txtEdad.Text);
-            parametros.Add("codigo", txtCodigo.Text);
             cliente.UploadValues("http://127.0.0.1/moviles/post.php", "POST", parametros);
 			Navigation.PushAsync(new Inicio());
         }
